@@ -9,8 +9,10 @@
 <body>
     <!-- Section Hero-->
     <section class="hero-section">
-        <div class="wrapper">
+        <div>
             <div class="slider">
+                <button id="btnHeroPrev" class="btnHero">&lt</button>
+
                 <div class="slide">
                     <h1>Escola de música pra quem é de música</h1>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta doloremque expedita, culpa, ut maxime amet odio velit, veritatis.</p>
@@ -19,34 +21,35 @@
                 <div class="slide">
                     <h1>Venha aprender</h1>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta doloremque expedita, culpa, ut maxime amet odio velit, veritatis.</p>
+                    <button id="btn-slide">Conheça nossos cursos</button>
                 </div>
 
                 <div class="slide">
                     <h1>É cantando que se aprende</h1>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta doloremque expedita, culpa, ut maxime amet odio velit, veritatis.</p>
+                    <button>Curso de Canto</button>
                 </div>
+
+                <button id="btnHeroNext" class="btnHero">&gt</button>
             </div>
         </div>
     </section>
 
     <!-- Menu nav (Header)-->
-    <nav class="menu-nav">
-        <div class="wrapper between">
-            <img src="#" alt="Logo">
+    <nav class="menu-nav around">
+            <img src="./assets/logo.png" alt="Logo" style="height: 60px;">
             <ul class="menu-lista">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Cursos</a></li>
                 <li><a href="#">Depoimentos</a></li>
                 <li><a href="#">Contatos</a></li>
-            
             </ul>
-        </div>
     </nav>
 
     <!-- Main cursos -->
     <main>
         <section class="section-cursos">
-            <div class="wrapper">
+            <div>
                 <div class="cursos">
                     <h2>Conheça nossos cursos</h2>
                     
@@ -78,67 +81,69 @@
         </section>
             
         
-    <!-- Depoimentos-->
-    <section class="depoimentos-section">
-        <div class="wrapper">
-            <div class="depoimentos">
-                <div class="depoimentos-top">
-                    <h2>Depoimentos</h2>
-                    <p>Fazendo a diferença</p>
-                </div>
+        <!-- Depoimentos-->
+        <section class="depoimentos-section">
+            <div class="wrapper">
+                <div class="depoimentos">
+                    <div class="depoimentos-top">
+                        <h2>Depoimentos</h2>
+                        <p>Fazendo a diferença</p>
+                    </div>
 
-                <ul class="lista-depoimentos">
-                    <li class="card-depoimento">#</li>
-                    <li class="card-depoimento">#</li>
-                    <li class="card-depoimento">#</li>
-                    <li class="card-depoimento">#</li>
-                    <li class="card-depoimento">#</li>
-                    <li class="card-depoimento">#</li>
-                </ul>
-            </div>
-        </div>
-    </section>
-        
-    <!--Sobre nós-->
-    <section class="sobre">
-        <div class="wrapper">
-            <h2>Sobre nossa escola</h2>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima sapiente pariatur fuga, possimus magnam suscipit rem, praesentium mollitia eum nihil enim rerum eos at consectetur ad dolorum libero laborum minus.
-            Dolorem, distinctio corrupti! Fugiat sint esse nobis voluptatem fugit quas! Officiis commodi facilis doloremque modi qui vitae explicabo asperiores quae architecto repellendus dolorum similique iusto, consequuntur inventore ipsam voluptatibus dignissimos?
-            Deleniti expedita ad eligendi debitis voluptate! Quia veniam qui, quaerat quidem maiores, ipsum aliquid expedita animi, rem tempore quam laborum ex libero magnam veritatis. Quas tempora nihil ipsum nesciunt et.
-                
-    </section>
-        
-    <!-- Contato-->
-    <section class="contato">
-        <div class="wrapper">
-            <div>
-                <h2>Entre em contato conosco</h2>
-            </div>
-            <div class="container">
-                <div>
-                    <h3>Informações de contato:</h3>
-                    <ul>
-                        <li>
-                            <p>Endereço:</p>
-                            <p>Rua Tito, 54, São Paulo - SP, CEP 05051-000</p>
-                        </li>
-                        <li>
-                            <p>Telefone:</p>
-                            <p>(11) 2880-5500</p>
-                        </li>
-                        <li>
-                            <p>E-mail:</p>
-                            <p>senac.saopaulo@senac.com</p>
-                        </li>
-                        <li>
-                            Nosso Whatsapp
-                        </li>
+                    <ul class="lista-depoimentos">
+                        <li class="card-depoimento">#</li>
+                        <li class="card-depoimento">#</li>
+                        <li class="card-depoimento">#</li>
+                        <li class="card-depoimento">#</li>
+                        <li class="card-depoimento">#</li>
+                        <li class="card-depoimento">#</li>
                     </ul>
                 </div>
             </div>
-        </div>
-                </section>
+        </section>
+            
+        <!--Sobre nós-->
+        <section class="sobre">
+            <div class="wrapper">
+                <div class="sobre-conteudo">
+                    <h2>Sobre nossa escola</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima sapiente pariatur fuga, possimus magnam suscipit rem, praesentium mollitia eum nihil enim rerum eos at consectetur ad dolorum libero laborum minus.
+                    Dolorem, distinctio corrupti! Fugiat sint esse nobis voluptatem fugit quas! Officiis commodi facilis doloremque modi qui vitae explicabo asperiores quae architecto repellendus dolorum similique iusto, consequuntur inventore ipsam voluptatibus dignissimos?
+                    Deleniti expedita ad eligendi debitis voluptate! Quia veniam qui, quaerat quidem maiores, ipsum aliquid expedita animi, rem tempore quam laborum ex libero magnam veritatis. Quas tempora nihil ipsum nesciunt et.
+                </div>
+                    
+        </section>
+        
+        <!-- Contato-->
+        <section class="contato">
+            <div>
+                <h2>Entre em contato conosco</h2>
+                <h3>Informações de contato:</h3>
+            </div>
+
+            <div class="container">    
+                <ul class="contato-lista">
+                    <li>
+                        <p>Endereço:</p>
+                        <p>Rua Tito, 54, São Paulo - SP, CEP 05051-000</p>
+                    </li>
+
+                    <li>
+                        <p>Telefone:</p>
+                        <p>(11) 2880-5500</p>
+                    </li>
+
+                    <li>
+                        <p>E-mail:</p>
+                        <p>senac.saopaulo@senac.com</p>
+                    </li>
+
+                    <li>
+                        Nosso Whatsapp
+                    </li>
+                </ul>
+            </div>
+        </section>
     </main>
 
     <!-- Footer-->

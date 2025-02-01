@@ -3,11 +3,27 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
-    
+}
+
+p {
+    font-size: 1.2rem;
 }
 
 a {
     text-decoration: none;
+}
+
+button {
+    font-size: 1.1rem;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.8rem;
+    font-weight: bold;
 }
 
 .wrapper {
@@ -15,10 +31,10 @@ a {
     margin: 0 auto;
 }
 
-.between {
+.around {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 100%;
     padding: 0 30px;
 }
@@ -27,13 +43,26 @@ a {
 .hero-section {
     display: flex;
     align-items: center;
-    height: 500px;
-    background-color: aqua;
+    height: 400px;
+    background-image: url(./assets/hero_03.jpeg);
+    background-size: cover;
+}
+
+.btnHero {
+    width: 90px;
+    font-size: 2rem;
+    background: 0;
+    border: none;
+    cursor: pointer;
+}
+
+.btnHero:hover {
+    background-color: white;
+    opacity: 0.5;
 }
 
 .slider {
     display: flex;
-    width: 100%;
 }
 
 .slide {
@@ -43,19 +72,52 @@ a {
     gap: 15px;
     padding: 30px;
     border: 2px solid red;
+    color: white;
+}
+
+.slide h1 {
+    color: #F2AE30;
+}
+
+.slide button {
+    margin: 0 auto;
+    width: 230px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 2px 4px 15px white;
+    cursor: pointer;
+}
+
+.slide button:hover {
+    font-weight: bold;
+    background-color: #F2AE30;
+    color: white;
+    box-shadow: 2px 4px 15px #F2AE30;
+
 }
 
 /* ------------ Menu Nav --------------- */
 .menu-nav {
     display: flex;
-    background-color: #ccc;
+    background-color: white;
     width: 100%;
     height: 70px;
 }
 
+.menu-nav a {
+    font-size: 1.6rem;
+    color: #F2AE30;
+}
+
+.menu-nav a:hover{
+    font-weight: bold;
+}
+
  .menu-lista {
     display: flex;
-    gap: 20px;
+    gap: 30px;
+    font-size: 1.2rem;
  }
 
  .menu-lista li {
@@ -65,44 +127,69 @@ a {
  /* ------------ Cursos --------------- */
 .section-cursos {
     display: flex;
+    justify-content: center;
     align-items: center;
     text-align: center;
-    height: 300px;
-    background-color: lightgreen;
+    height: 400px;
+    background-color: #024959;
 }
 
 .cursos {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 40px;
+}
+
+.cursos h2 {
+    color: #F2AE30;
 }
 
  .lista-cursos {
     display: flex;
     align-items: center;
+    gap: 15px;
  }
 
  .card-curso {
     display: flex;
     flex-direction: column;
     justify-content: end;
-    gap: 10px;
+    gap: 15px;
     padding: 10px;
-    width: 150px;
-    height: 150px;
+    font-size: 1.5rem;
+    width: 200px;
+    height: 200px;
     border: 1px solid black;
+    color: #F2AE30;
  }
 
  .card-curso {
     font-weight: bold;
  }
 
+ .card-curso button {
+    margin: 0 auto;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 1px 2px 15px white;
+    cursor: pointer;
+ }
+
+ .card-curso button:hover {
+    font-weight: bold;
+    background-color: #F2AE30;
+    color: white;
+    box-shadow: 2px 4px 15px #F2AE30;
+
+}
+
   /* ------------ Depoimentos --------------- */
   .depoimentos-section {
     display: flex;
     align-items: center;
-    height: 300px;
-    background-color: lightgoldenrodyellow;
+    height: 400px;
+    background-color: white;
   }
 
   .depoimentos {
@@ -110,8 +197,12 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 40px;
   }
-
+  
+.depoimentos-top {
+    color: #024959;
+}
   .lista-depoimentos {
     display: flex;
     gap: 20px;
@@ -126,3 +217,54 @@ a {
     border: 1px solid black;
     list-style: none;
   }
+
+   /* ------------ Sobre --------------- */ 
+.sobre {
+    display: flex;
+    align-items: center;
+    background-color: #024959;
+    height: 400px;
+}
+
+.sobre-conteudo {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 20px;
+    color: white;
+}
+
+.sobre-conteudo h2 {
+    color: #F2AE30;
+}
+
+/* ------------ Contato --------------- */ 
+.contato {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    height: 400px;
+    background-color: white;
+    color: #024959;
+}
+
+.contato-lista {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    list-style: none;
+    color: black;
+}
+
+/* ------------ Cabeçalho --------------- */ 
+footer {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    height: 40px;
+    color: white;
+    background-color: #024959;
+
+}
